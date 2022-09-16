@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: hyujik
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: hyujik
   template:
     metadata:
       labels:
-        app: ray
+        app: hyujik
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/hyujik:latest
+        name: hyujik
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "1938d2cd-79dc-4053-941d-594cdf17cecf"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vl5gyh655"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "1938d2cd-79dc-4053-941d-594cdf17cecf"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vm6gty67466"
         - name: Share_Path
           value: "/v2link"
